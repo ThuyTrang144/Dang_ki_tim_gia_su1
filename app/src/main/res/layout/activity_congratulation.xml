@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:gravity="center"
+tools:context="com.ex.phongtoda.dang_ki_tim_gia_su.Congratulation">
+<TextView
+    android:id="@+id/chucmung"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Bạn đã đăng ký thành công !"
+    android:textColor="@color/colorRed"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:layout_marginLeft="40dp"/>
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="40dp"
+    android:background="@drawable/congra_png" />
+<Button
+    android:id="@+id/Back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Trang chủ"
+    android:layout_below="@id/chucmung"
+    android:layout_marginTop="50dp"
+    android:layout_centerInParent="true"/>
+
+</RelativeLayout>

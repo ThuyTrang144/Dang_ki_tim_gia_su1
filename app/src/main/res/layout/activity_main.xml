@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.ex.phongtoda.dang_ki_tim_gia_su.MainActivity">
+   <RelativeLayout
+    android:id="@+id/Rl2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Đăng kí tìm gia sư"
+        android:background="@color/colorBlue"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tvTenHS"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:text="Tên học sinh: "
+        android:layout_below="@+id/title2"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edTenHS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/tvTenHS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvLop"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="Lớp:"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:layout_below="@+id/edTenHS"
+        android:textStyle="bold"/>
+       <EditText
+           android:id="@+id/edLop"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@id/tvLop"/>
+
+   <TextView
+        android:id="@+id/TVgioitinh"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="Giới tính: "
+        android:textSize="15sp"
+        android:layout_below="@+id/edLop"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:id="@+id/RadioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edLop">
+        <RadioButton
+            android:id="@+id/radioNam"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="150dp"
+            android:text="Nam"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioNu"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Nữ"
+            android:checked="false"
+            android:layout_marginLeft="150dp"
+            />
+    </RadioGroup>
+
+
+
+
+    <TextView
+        android:id="@+id/TVsdt"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:text="Số điện thoại phụ huynh: "
+        android:textSize="15sp"
+        android:layout_below="@+id/TVgioitinh"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edsdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVsdt"
+        android:inputType="phone"
+        />
+
+    <TextView
+        android:id="@+id/tvDiaChi"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:textSize="15sp"
+        android:layout_below="@+id/edsdt"
+        android:text="Địa Chỉ: "
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/edque2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@id/tvDiaChi"/>
+    <TextView
+        android:id="@+id/TVmon2"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:text="Môn học:"
+        android:textSize="15dp"
+        android:layout_below="@+id/edque2"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/edmon2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/TVmon2" />
+
+    <TextView
+        android:id="@+id/TVluong"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/edmon2"
+        android:textSize="15sp"
+        android:text="Lương:"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edluong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVluong"
+        android:inputType="text" />
+
+
+    <TextView
+        android:id="@+id/tvYeuCau"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:text="Yêu cầu đối với gia sư:"
+        android:layout_below="@+id/edluong"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edtYeuCau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/tvYeuCau"/>
+
+    <Button
+        android:id="@+id/btnDangKy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:layout_below="@id/edtYeuCau"
+        android:layout_centerInParent="true"
+
+        />
+
+
+
+   </RelativeLayout>
+
+
+
+</ScrollView>
